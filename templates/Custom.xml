@@ -1,0 +1,84 @@
+<templateSet group="Custom">
+  <template name="logd" value="Timber.d(&quot;$content$&quot;)" description="Timber.d(String)" toReformat="true" toShortenFQNames="true">
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="logv" value="Timber.v(&quot;$content$&quot;)" description="Timber.v(String)" toReformat="true" toShortenFQNames="true">
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="--" value="------------------------------------------------------------------------------------------" description="Comment line" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="KOTLIN_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="drawable" value="ViewHelper.getDrawable(R.drawable.$cursor$)" description="ViewHelper.getDrawable(R.drawable.[drawable])" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="string" value="StringUtil.getString(R.string.$cursor$)" description="StringUtil.getString(R.string.[string])" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="wrap" value="android:layout_width=&quot;wrap_content&quot;&#10;android:layout_height=&quot;wrap_content&quot;" description="XML wrap content" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+    </context>
+  </template>
+  <template name="color" value="ViewHelper.getColor(R.color.$cursor$)" description="ViewHelper.getColor(R.color.[color])" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="dimen" value="ViewHelper.getDimen(R.dimen.pixel_$cursor$)" description="ViewHelper.getDimen(R.dimen.pixel_[dimen])" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="intdefKt" value="    @IntDef()&#10;    @Retention(AnnotationRetention.SOURCE)&#10;    annotation class $name$ {&#10;        companion object {&#10;            $cursor$&#10;        }&#10;    }" description="IntDef for Kotlin" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="intdef" value="    @Retention(RetentionPolicy.SOURCE)&#10;    @IntDef({&#10;    &#10;    })&#10;    public @interface $name$ {&#10;    }" description="IntDef" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="serialK" value="@SerializedName(&quot;$name$&quot;) var $nameCap$: $type$ = $cursor$" description="Generates a var for JSON data" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="nameCap" expression="camelCase(name)" defaultValue="" alwaysStopAt="false" />
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="strEmpty" value="StringUtil.EMPTY" description="Empty String" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,1 @@
+com.structure101.intellij.developer.plugin

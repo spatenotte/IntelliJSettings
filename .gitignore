@@ -1,0 +1,20 @@
+# top-level
+user.token
+port.lock
+disabled_update.txt
+port
+
+# options
+options/androidStudioFirstRun.xml
+options/dimensions.xml
+options/find.xml
+options/jdk.table.xml
+options/keymap.xml
+options/laf.xml
+options/options.xml
+options/path.macros.xml
+options/recentProjects.xml
+options/updates.xml
+options/usage.statistics.xml
+options/window.manager.xml
+options/window.state.xml
